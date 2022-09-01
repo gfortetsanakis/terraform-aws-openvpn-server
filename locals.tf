@@ -36,7 +36,7 @@ locals {
       daemon = {
         from        = 1194
         to          = 1194
-        protocol    = "udp"
+        protocol    = var.openvpn_protocol
         cidr_blocks = [var.openvpn_client_ips]
       }
     }
