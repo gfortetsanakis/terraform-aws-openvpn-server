@@ -44,6 +44,7 @@ resource "aws_instance" "openvpn_server" {
   key_name                    = aws_key_pair.openvpn_key.key_name
   user_data = templatefile("${path.module}/templates/user_data.sh", {
     openvpn_user = var.openvpn_user
+    protocol     = local.protocol[var.openvpn_protocol]
     }
   )
 
