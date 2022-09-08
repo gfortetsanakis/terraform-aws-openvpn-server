@@ -19,25 +19,25 @@ locals {
         from        = 22
         to          = 22
         protocol    = "tcp"
-        cidr_blocks = [var.openvpn_client_ips]
+        cidr_blocks = var.openvpn_client_cidr_blocks
       }
       ui = {
         from        = 943
         to          = 943
         protocol    = "tcp"
-        cidr_blocks = [var.openvpn_client_ips]
+        cidr_blocks = var.openvpn_client_cidr_blocks
       }
       https = {
         from        = 443
         to          = 443
         protocol    = "tcp"
-        cidr_blocks = [var.openvpn_client_ips]
+        cidr_blocks = var.openvpn_client_cidr_blocks
       }
       daemon = {
         from        = 1194
         to          = 1194
         protocol    = var.openvpn_protocol
-        cidr_blocks = [var.openvpn_client_ips]
+        cidr_blocks = var.openvpn_client_cidr_blocks
       }
     }
   }

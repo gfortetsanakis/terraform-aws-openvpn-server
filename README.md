@@ -8,7 +8,7 @@ This module deploys an OpenVPN server on a public subnet of an AWS VPC. By conne
 | --------------------- | -------- | -------------------------------------------------------------------------------------- |
 | aws_region            | Required | The aws region at which the module will be deployed                                    |
 | vpc_id                | Required | The id of the VPC at which the OpenVPN server will be installed                        |
-| openvpn_client_ips    | Required | List of CIDR blocks that are allowed to connect to the OpenVPN server                  |
+| openvpn_client_cidrs  | Required | List of CIDR blocks that are allowed to connect to the OpenVPN server                  |
 | openvpn_key_path      | Required | The path to the public ssh key file for the OpenVPN server                             |
 | openvpn_instance_type | Required | The instance type for the OpenVPN server                                               |
 | openvpn_subnet_id     | Required | The id of the VPC subnet at which the OpenVPN server will de deployed                  |

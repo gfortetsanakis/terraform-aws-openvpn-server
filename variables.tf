@@ -6,7 +6,7 @@ variable "vpc_id" {
   description = "The id of the VPC at which the OpenVPN server will be installed."
 }
 
-variable "openvpn_client_ips" {
+variable "openvpn_client_cidrs" {
   description = "List of CIDR blocks that are allowed to connect to the OpenVPN server."
 }
 
