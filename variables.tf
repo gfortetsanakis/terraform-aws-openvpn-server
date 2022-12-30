@@ -10,8 +10,8 @@ variable "openvpn_client_cidrs" {
   description = "List of CIDR blocks that are allowed to connect to the OpenVPN server."
 }
 
-variable "openvpn_key_path" {
-  description = "The path to the public ssh key file for the OpenVPN server."
+variable "openvpn_key" {
+  description = "The public ssh key for the OpenVPN server."
 }
 
 variable "openvpn_instance_type" {

@@ -10,7 +10,7 @@ data "aws_ami" "openvpn_instance_ami" {
 
 resource "aws_key_pair" "openvpn_key" {
   key_name   = "openvpn-server-key"
-  public_key = file(var.openvpn_key_path)
+  public_key = var.openvpn_key
 }
 
 resource "aws_security_group" "openvpn_sg" {
